@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features= "src/test/resources/Features", tags="@Test",
-plugin= {"html:target/cucumber.htmal.reporty"},
+plugin= {"pretty","json:target/cucumber.json","html:target/cucumber.htmal.reporty"},
 dryRun=false)
 
 
